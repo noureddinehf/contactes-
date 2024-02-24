@@ -1,0 +1,13 @@
+const mongoose=require('mongoose')
+let express=require('express')
+const cors = require('cors')
+let app=express()
+app.use(cors())
+const router=require('./routes/ahmed.js')
+mongoose.connect('mongodb://localhost:27017/data') 
+app.use(express.json())
+let db=mongoose.connection
+db.on('error',(error)=>{console.error(error)})
+db.once('connected',()=>console.log("concted"))
+app.use(router)
+app.listen(9000,()=>{console.log("good")})
