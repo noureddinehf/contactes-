@@ -144,7 +144,7 @@ con.forEach(c => {
           <Modal.Body>
             <Form>
               <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                <Form.Label>nom</Form.Label>
+                <Form.Label>nomm</Form.Label>
                 <Form.Control
                   type="text"
                   placeholder="nom"
