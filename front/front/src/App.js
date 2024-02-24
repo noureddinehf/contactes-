@@ -40,7 +40,7 @@ function App() {
 
   };
   const by =async () => {
-    console.log(name, num)
+    console.log(name)
     const data = { name, num }
     await dispatch(put(id,data))
     await dispatch(get())
